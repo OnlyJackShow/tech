@@ -15,5 +15,34 @@
   * 重启防火墙命令
    
     ``` systemctl restart firewalld  ```
+  
+  * 查询已开放端口
+    ``` firewall-cmd --list-all ```
+  
+  * 开放端口
+  
+     ```firewall-cmd --zone=public --add-port=5672/tcp --permanent```
+     
+  * 立即生效
+  
+    ```firewall-cmd --reload```
    
+    
+   
+   * 创建文件夹
+   
+     ``` mkdir test1 ```
+   
+   * 创建文件 例如hello.txt
+   
+      ``` vi hello.txt ```
+   
+   * 拷贝文件
+   
+     ``` cp hello.txt test1```
+     
+   * 移动文件
+   
+     ```mv hello.txt test1``` 
+     
    
