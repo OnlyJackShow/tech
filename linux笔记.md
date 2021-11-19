@@ -35,6 +35,10 @@
    * 安装网络工具
       
       ```yum -y install net-tools```
+     
+   * 查看端口被哪个应用占用
+      
+      ```netstat -lnp | grep 5672```
     
    
    * 创建文件夹
