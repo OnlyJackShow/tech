@@ -17,12 +17,17 @@
     ``` systemctl restart firewalld  ```
   
   * 查询已开放端口
+ 
     ``` firewall-cmd --list-all ```
   
   * 开放端口
   
      ```firewall-cmd --zone=public --add-port=5672/tcp --permanent```
-     
+  
+  * 移除端口
+  
+     ``` firewall-cmd --permanent --remove-port=5672/tcp ```
+  
   * 立即生效
   
     ```firewall-cmd --reload```
