@@ -32,6 +32,9 @@
   
     ```firewall-cmd --reload```
    
+   * 安装网络工具
+      
+      ```yum -y install net-tools```
     
    
    * 创建文件夹
